@@ -11,5 +11,6 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 module SporkThreadsafe
   class Application < Rails::Application
+    config.threadsafe!
   end
 end
